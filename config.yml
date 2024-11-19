@@ -5,5 +5,6 @@ cannyThreshold2: 200
 digitMinHeight: 20
 digitMaxHeight: 90
 digitYAlignment: 10
+numberOfDigits: 7
 ocrMaxDist: 600000.
 trainingDataFilename: "training.yml"

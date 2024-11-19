@@ -46,6 +46,10 @@ public:
         return _cannyThreshold2;
     }
 
+    int getNumberOfDigits() const {
+        return _numberOfDigits;
+    }
+
 private:
     int _rotationDegrees;
     float _ocrMaxDist;
@@ -54,6 +58,7 @@ private:
     int _digitYAlignment;
     int _cannyThreshold1;
     int _cannyThreshold2;
+    int _numberOfDigits;
     std::string _trainingDataFilename;
 };
 
