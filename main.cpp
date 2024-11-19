@@ -187,7 +187,7 @@ static void writeData(ImageInput* pImageInput) {
         proc.setInput(pImageInput->getImage());
         proc.process();
 
-        if (proc.getOutput().size() == 7) {
+        if (proc.getOutput().size() == config.getNumberOfDigits) {
             std::string result = ocr.recognize(proc.getOutput());
             if (plausi.check(result, pImageInput->getTime())) {
                 rrd.update(plausi.getCheckedTime(), plausi.getCheckedValue());
